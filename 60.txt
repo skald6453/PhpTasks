@@ -1,0 +1,16 @@
+<?php
+
+namespace HexletBasics\Loops\AgregationString;
+
+// BEGIN (write your solution here)
+function joinNumbersFromRange($firstNum, $lastNum){
+
+    $result = "";
+    $i = $firstNum;
+    while($i <= $lastNum){
+        $result = "{$result}{$i}";
+        $i++;
+    }
+    return $result;
+}
+// END

@@ -1,0 +1,15 @@
+<?php
+
+namespace HexletBasics\Loops\WhileLoop;
+
+function printNumbers($firstNumber)
+{
+    // BEGIN (write your solution here)
+    $i = $firstNumber;
+    while($i > 0){
+        print_r("{$i}\n");
+        $i--;
+    }
+    print_r("finished!");
+    // END
+}

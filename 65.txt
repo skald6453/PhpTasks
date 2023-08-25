@@ -1,0 +1,18 @@
+<?php
+
+namespace HexletBasics\Loops\SyntaxSugar;
+
+// BEGIN (write your solution here)
+function filterString($string, $char){
+    $i = 0;
+    $newstr = "";
+    while($i<strlen($string))
+    {
+        if($string[$i] !== $char){
+            $newstr .= $string[$i];
+        }
+        $i++;
+    }
+    return $newstr;
+}
+// END

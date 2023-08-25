@@ -1,0 +1,20 @@
+<?php
+
+namespace HexletBasics\Loops\ConditionsInsideLoops;
+
+// BEGIN (write your solution here)
+function countChars($str, $char){
+    $i = 0;
+    $count = 0;
+    $char2 = strtolower($char);
+    $char3 = strtoupper($char);
+    while ($i < strlen($str)) {  
+        if ($str[$i] === $char2 || $str[$i] === $char3) {
+            $count = $count + 1;
+        }
+        $i = $i + 1;
+    }
+
+    return $count;
+}
+// END

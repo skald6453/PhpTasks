@@ -1,0 +1,21 @@
+<?php
+
+namespace HexletBasics\Loops\Mutators;
+
+// BEGIN (write your solution here)
+function makeItFunny($string, $num){
+    $i=0;
+    $newstr = "";
+    while($i<strlen($string))
+    {
+        if(($i+1) % $num === 0){
+            $newstr .= strtoupper($string[$i]);
+        }
+        else {
+            $newstr .= $string[$i];
+        }
+        $i++;
+    }
+    return $newstr;
+}
+// END

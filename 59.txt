@@ -1,0 +1,15 @@
+<?php
+
+namespace HexletBasics\Loops\AgregationNumber;
+
+// BEGIN (write your solution here)
+function multiplyNumbersFromRange($firstNum, $lastNum)
+{
+    $result = $firstNum;
+    while($firstNum !== $lastNum){
+        $result = $result * ($firstNum+1);
+        $firstNum++;
+    }
+    return $result;
+}
+// END

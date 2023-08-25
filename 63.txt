@@ -1,0 +1,17 @@
+<?php
+
+namespace HexletBasics\Loops\ReverseString;
+
+// BEGIN (write your solution here)
+function mysubstr($string, $length){
+    $i=0;
+    $result = "";
+    while($i < $length)
+    {
+        $currentChar = $string[$i];
+        $result = "{$result}{$currentChar}";
+        $i++;
+    }
+    return $result;
+}
+// END
